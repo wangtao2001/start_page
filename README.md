@@ -24,11 +24,13 @@ npm run build
 
 ###### 后端
 
-后端使用Django+uWSGI+Nginx服务，将前端打包文件放到`/start_page/frontend/dist`目录下即可，数据库使用mysql，可在`/start_page/start_page/settings.py`中自行配置。
+后端使用Django+uWSGI+Nginx服务，将前端打包文件放到`/start_page/frontend/dist`目录下即可，数据库使用MySQL，可在`/start_page/start_page/settings.py`中自行配置。
 
 ```shell
 uwsgi --ini uwsgi.ini
 ```
 
 在Nginx中，将所有静态资源（favicon.ico、css、js、fonts、img）请求直接定位到`/start_page/frontend/dist`下，动态请求转发给uWSGI。
+
+### 本项目仅供学习使用，如需上传至服务器使用，请修改声明、域名与备案信息
 
