@@ -4,7 +4,7 @@
 
 <img src="preview.png">
 
-[起始页](shuangchen.info)
+[起始页](https://shuangchen.info)
 
 ### 项目安装
 
